@@ -1,0 +1,100 @@
+@media screen and (min-width: 550px) { 
+  .restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }   
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  } 
+  .app-bar .app-bar__menu {
+    display: none;
+  } 
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  } 
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }    
+  .restaurant .restaurant-detail {
+    flex-direction: row;
+  }
+  .restaurant .restaurant-detail aside {
+    min-width: 300px;
+  }
+  .restaurant .restaurant__review {
+    flex-direction: row;
+  }
+}
+   
+@media screen and (min-width: 800px) {
+  main {
+    padding: 50px;
+  }
+  .app-bar .app-bar__brand h1 {
+    font-size: 32px;
+  }
+  .hero__heading {  
+    font-size: 32px;
+  }  
+  .hero__tagline {    
+    font-size: 18px;
+  }
+  .restaurants-item .restaurants-item__content h3 {
+    font-size: 18px;
+  }
+  .restaurants-item .restaurants-item__content p {
+    font-size: 14px;
+  }
+  .restaurant .restaurant-detail__title {
+    font-size: 24px;
+  }
+  .restaurant .restaurant-detail__category {
+    font-size: 16px;
+  }
+  .restaurant .restaurant-detail__location {
+    font-size: 16px;
+  }
+  .restaurant .restaurant-detail__rating {
+    font-size: 16px;
+  }
+  .restaurant .restaurant-detail__description {
+    font-size: 14px;
+  } 
+  .restaurant .restaurant-detail__description h2 {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 16px;  
+  }
+}   
+  
+@media screen and (min-width: 850px) {
+  .restaurants {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}   
+  
+@media screen and (min-width: 1200px) {
+  .restaurants {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}   
+  
+@media screen and (min-width: 1600px) {
+  .restaurants {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
